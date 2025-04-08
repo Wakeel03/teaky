@@ -35,7 +35,7 @@ const Products = () => {
           <ul className="filter-btn-list">
             <li className="filter-btn-item">
               <button
-                className={`filter-btn Rs {productFilter == "all" && "active"}`}
+                className={`filter-btn Rs ${productFilter == "all" && "active"}`}
                 onClick={() => filter("all")}
               >
                 All Products
@@ -44,7 +44,7 @@ const Products = () => {
 
             <li className="filter-btn-item">
               <button
-                className={`filter-btn Rs {
+                className={`filter-btn Rs ${
                   productFilter == "accessory" && "active"
                 }`}
                 onClick={() => filter("accessory")}
@@ -55,7 +55,7 @@ const Products = () => {
 
             <li className="filter-btn-item">
               <button
-                className={`filter-btn Rs {
+                className={`filter-btn Rs ${
                   productFilter == "decoration" && "active"
                 }`}
                 onClick={() => filter("decoration")}
@@ -66,7 +66,7 @@ const Products = () => {
 
             <li className="filter-btn-item">
               <button
-                className={`filter-btn Rs {
+                className={`filter-btn Rs ${
                   productFilter == "furniture" && "active"
                 }`}
                 onClick={() => filter("furniture")}
